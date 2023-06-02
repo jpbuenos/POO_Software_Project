@@ -1,1 +1,1 @@
-Diagrama de Classes :https://lucid.app/lucidchart/d0ffcd96-d666-4797-950b-4eac75983433/edit?beaconFlowId=E850707EFFC7AFE1&invitationId=inv_b6d6ace7-92d6-43ee-9887-f59055f5435d&page=.4D3L21Jjb5w#
+Diagrama de Classes : https://encurtador.com.br/bvBM5
