@@ -1,7 +1,7 @@
 ## Diagrama de Classes : https://encurtador.com.br/bvBM5
 
 ## Requistios do Software de submissão de artigos:
->>
+
 * Sistema de Login:
     -Permitir o login de autores e revisores para acessar suas respectivas funcionalidades e informações.
 
