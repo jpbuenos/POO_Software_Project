@@ -3,7 +3,7 @@
 ## Requistios do Software de submissão de artigos:
 
 * Sistema de Login:
-    **Permitir o login de autores e revisores para acessar suas respectivas funcionalidades e informações.
+* **Permitir o login de autores e revisores para acessar suas respectivas funcionalidades e informações.
 
 * Criação de Artigo:
     -Permitir que os autores criem um novo artigo virtual, fornecendo informações como título, autores, resumo, conteúdo e anexando o artigo no formato PDF.
