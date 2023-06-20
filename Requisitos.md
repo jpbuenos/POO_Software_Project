@@ -1,4 +1,4 @@
-## Diagrama de Classes : https://encurtador.com.br/bvBM5
+## Diagrama de Classes : https://lucid.app/lucidchart/d0ffcd96-d666-4797-950b-4eac75983433/edit?viewport_loc=-1756%2C-128%2C7744%2C3800%2C.4D3L21Jjb5w&invitationId=inv_b6d6ace7-92d6-43ee-9887-f59055f5435d
 
 ## Requistios do Software de submissão de artigos:
 
