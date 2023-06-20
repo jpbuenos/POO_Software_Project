@@ -1,13 +1,58 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package SubmissaoDeArtigos.model;
 
-/**
- *
- * @author anton
- */
 public class Submissao {
-    
+    private Artigo artigo;
+    private Autor[] autor;
+    private Revista instituicao;
+    private Revisor[] revisor;
+    private String status;
+
+    public Submissao(Artigo artigo, Autor[] autor, Revista instituicao, Revisor[] revisor, String status) {
+        this.artigo = artigo;
+        this.autor = autor;
+        this.instituicao = instituicao;
+        this.revisor = revisor;
+        this.status = status;
+    }
+
+    public Artigo getArtigo() {
+        return artigo;
+    }
+
+    public void setArtigo(Artigo artigo) {
+        this.artigo = artigo;
+    }
+
+    public Autor[] getAutor() {
+        return autor;
+    }
+
+    public void setAutor(Autor[] autor) {
+        this.autor = autor;
+    }
+
+    public Revista getInstituicao() {
+        return instituicao;
+    }
+
+    public void setInstituicao(Revista instituicao) {
+        this.instituicao = instituicao;
+    }
+
+    public Revisor[] getRevisor() {
+        return revisor;
+    }
+
+    public void setRevisor(Revisor[] revisor) {
+        this.revisor = revisor;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }

@@ -1,13 +1,40 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package SubmissaoDeArtigos.model;
 
-/**
- *
- * @author anton
- */
+import  java.util.Date;
+
 public class Pessoa {
-    
+    private String nome;
+    private Date dataDeNasc;
+    private String enderecoEmail;
+
+    public Pessoa(String nome, Date dataDeNasc, String enderecoEmail) {
+        this.nome = nome;
+        this.dataDeNasc = dataDeNasc;
+        this.enderecoEmail = enderecoEmail;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Date getDataDeNasc() {
+        return dataDeNasc;
+    }
+
+    public void setDataDeNasc(Date dataDeNasc) {
+        this.dataDeNasc = dataDeNasc;
+    }
+
+    public String getEnderecoEmail() {
+        return enderecoEmail;
+    }
+
+    public void setEnderecoEmail(String enderecoEmail) {
+        this.enderecoEmail = enderecoEmail;
+    }
 }
