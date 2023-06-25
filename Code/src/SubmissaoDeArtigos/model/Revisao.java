@@ -4,11 +4,11 @@
  */
 package model;
 
-public class Revista {
+public class Revisao {
     private int id;
-    private String nome;
-    private Pessoa editorChefe;
-    private int ISSN;
+    private Revisor revisor;
+    private Artigo artigo;
+    private boolean estatus;
     // Outros atributos e métodos
     
     // Construtores, getters e setters
