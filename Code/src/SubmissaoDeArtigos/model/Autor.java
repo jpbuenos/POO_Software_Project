@@ -1,5 +1,5 @@
 
-package model;
+package SubmissaoDeArtigos.model;
 import java.util.*;
 
 public class Autor {

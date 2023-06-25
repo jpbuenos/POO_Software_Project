@@ -1,11 +1,11 @@
-package banco;
+package SubmissaoDeArtigos.bd;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.*;
-import model.Pessoa;
+import SubmissaoDeArtigos.model.*;
 
 public class PessoaDAO {
     private String connectionString;

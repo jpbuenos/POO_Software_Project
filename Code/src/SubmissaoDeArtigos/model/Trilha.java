@@ -1,4 +1,4 @@
-package model;
+package SubmissaoDeArtigos.model;
 
 import java.util.ArrayList;
 
