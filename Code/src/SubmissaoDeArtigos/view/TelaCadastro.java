@@ -72,7 +72,6 @@ public class TelaCadastro extends javax.swing.JFrame implements Observer{
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Tela de cadastro do software");
-        setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Autor", "Revista" }));
