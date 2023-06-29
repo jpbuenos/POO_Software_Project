@@ -1,5 +1,5 @@
 
-package SubmissaoDeArtigos.banco;
+package SubmissaoDeArtigos.bd;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

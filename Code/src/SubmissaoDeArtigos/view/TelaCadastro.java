@@ -8,15 +8,16 @@ import javax.swing.JFrame;
 
 
 public class TelaCadastro extends javax.swing.JFrame implements Observer{
-
+    
+    //Atributos
     private Model model;
     private TelaCadastroController controller;
     private String login;
     private String senha;
     
-    public TelaCadastro() {
-        initComponents();
-        this.addWindowListener(new ProgramaFechador());
+    public TelaCadastro() { //Cria o objeto  TelaCadastro
+        initComponents(); //Abre a tela
+        this.addWindowListener(new ProgramaFechador()); //Se fechar fecha certinho
 
     }
     
@@ -24,11 +25,10 @@ public class TelaCadastro extends javax.swing.JFrame implements Observer{
     
     
     
-    public void update() {
-
+    public void update() {//Implementado do Observer
     }
 
-    public void initTelaCadastro(Model model) {
+    public void initTelaCadastro(Model model) { // Cria o seu controller passando o Model
         this.model = model;
         controller = new TelaCadastroController();
         controller.initLoginUserViewController(model, this);
@@ -37,7 +37,7 @@ public class TelaCadastro extends javax.swing.JFrame implements Observer{
     }
         
         
-    public void tela(){
+    public void tela(){//Mostra a tela
     java.awt.EventQueue.invokeLater(new Runnable() {
         public void run() {
             new TelaCadastro().setVisible(true);
@@ -62,6 +62,7 @@ public class TelaCadastro extends javax.swing.JFrame implements Observer{
         jComboBox1 = new javax.swing.JComboBox<>();
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -90,7 +91,7 @@ public class TelaCadastro extends javax.swing.JFrame implements Observer{
             }
         });
 
-        jLabel1.setText("jLabel1");
+        jLabel2.setText("Tipo:");
 
         jMenu2.setText("Artigo");
 
@@ -114,11 +115,15 @@ public class TelaCadastro extends javax.swing.JFrame implements Observer{
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(324, 324, 324)
+                .addGap(336, 336, 336)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(215, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(134, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -127,9 +132,11 @@ public class TelaCadastro extends javax.swing.JFrame implements Observer{
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(57, 57, 57)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(141, 141, 141)
+                .addGap(110, 110, 110)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(179, 179, 179)
                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42)
                 .addComponent(jButton2)
@@ -193,6 +200,7 @@ public class TelaCadastro extends javax.swing.JFrame implements Observer{
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;

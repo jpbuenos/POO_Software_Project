@@ -3,8 +3,6 @@ package SubmissaoDeArtigos.view;
 
 import SubmissaoDeArtigos.model.*;
 import SubmissaoDeArtigos.controller.*;
-import java.awt.event.*;
-import javax.swing.JFrame;
 
 
 
@@ -21,6 +19,7 @@ public class MainView extends javax.swing.JFrame implements Observer{
 
     }
     
+    @Override
     	public void update() {
 		
 	}
