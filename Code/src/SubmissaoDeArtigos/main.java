@@ -8,7 +8,7 @@ import SubmissaoDeArtigos.controller.*;
 
 
 
-public class main { //poe o dorbey na libraries na classpath
+public class main { //poe o derby na libraries na classpath
 
 
     public static void main(String[] args) {
