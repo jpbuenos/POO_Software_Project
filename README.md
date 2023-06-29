@@ -1,7 +1,7 @@
 # POO_Software_Project
 Criação de Software: submissão de artigos. Requisitos, UML , Código.
 ## Diagrama de Classes : 
-<a href="(https://lucid.app/lucidchart/d0ffcd96-d666-4797-950b-4eac75983433/edit?viewport_loc=-1756%2C-128%2C7744%2C3800%2C.4D3L21Jjb5w&invitationId=inv_b6d6ace7-92d6-43ee-9887-f59055f5435d)" target="_blank">https://lucid.app/lucidchart/d0ffcd96-d666-4797-950b-4eac75983433/edit?viewport_loc=-1756%2C-128%2C7744%2C3800%2C.4D3L21Jjb5w&invitationId=inv_b6d6ace7-92d6-43ee-9887-f59055f5435d</a>
+[https://lucid.app/lucidchart/d0ffcd96-d666-4797-950b-4eac75983433/edit?viewport_loc=-1756%2C-128%2C7744%2C3800%2C.4D3L21Jjb5w&invitationId=inv_b6d6ace7-92d6-43ee-9887-f59055f5435d](https://lucid.app/lucidchart/d0ffcd96-d666-4797-950b-4eac75983433/edit?viewport_loc=-1756%2C-128%2C7744%2C3800%2C.4D3L21Jjb5w&invitationId=inv_b6d6ace7-92d6-43ee-9887-f59055f5435d){:target="_blank"}
 
 ## Requistios do Software de submissão de artigos:
 
