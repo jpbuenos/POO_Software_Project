@@ -8,12 +8,12 @@ package SubmissaoDeArtigos.view;
  *
  * @author levia
  */
-public class ArtigosAVA extends javax.swing.JFrame {
+public class ArtigosAvaView extends javax.swing.JFrame {
 
     /**
      * Creates new form ArtigosAVA
      */
-    public ArtigosAVA() {
+    public ArtigosAvaView() {
         initComponents();
     }
 
@@ -99,20 +99,21 @@ public class ArtigosAVA extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ArtigosAVA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ArtigosAvaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ArtigosAVA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ArtigosAvaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ArtigosAVA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ArtigosAvaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ArtigosAVA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ArtigosAvaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ArtigosAVA().setVisible(true);
+                new ArtigosAvaView().setVisible(true);
             }
         });
     }
