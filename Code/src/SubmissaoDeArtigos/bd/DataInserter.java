@@ -3,12 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package SubmissaoDeArtigos.bd;
-
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import SubmissaoDeArtigos.model.*;
+import java.sql.*;
 
 public class DataInserter {
     private Connection conn;
@@ -21,12 +17,13 @@ public class DataInserter {
         }
     }
 
-    public void insertPessoa(String nome, Date dataDeNasc, String enderecoEmail) {
+    public void insertPessoa(Pessoa pessoa) {
+
         String sql = "INSERT INTO Pessoa (nome, dataDeNasc, enderecoEmail) VALUES (?, ?, ?)";
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, nome);
-            stmt.setDate(2, dataDeNasc);
-            stmt.setString(3, enderecoEmail);
+            stmt.setString(1, pessoa.getNome());
+            stmt.setDate(2, pessoa.getDataDeNasc());
+            stmt.setString(3, pessoa.getEnderecoEmail());
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

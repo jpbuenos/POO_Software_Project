@@ -1,7 +1,7 @@
 
 package SubmissaoDeArtigos.model;
 
-import  java.util.Date;
+import  java.sql.Date;
 
 public class Pessoa {
     private int id;
@@ -38,8 +38,8 @@ public class Pessoa {
         return dataDeNasc;
     }
 
-    public void setDataDeNasc(Date dataDeNasc) {
-        this.dataDeNasc = dataDeNasc;
+    public void setDataDeNasc(String date) {
+        this.dataDeNasc = Date.valueOf(date);
     }
 
     public String getEnderecoEmail() {
