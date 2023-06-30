@@ -18,6 +18,10 @@ public class MainViewController implements Observer{
             view2.initTelaCadastro(model);
         }
         
+        public void initRevisor(){
+            RevisorView view3 = new RevisorView();// ir para a tela revisor
+            view3.initRevisorView(model);
+        }
 
 	public void update() {
 		

@@ -4,9 +4,9 @@ import SubmissaoDeArtigos.view.*;
 
 public class RevisorController implements Observer{
     private Model model;
-    private Revisor view;
+    private RevisorView view;
     
-    public void InitUserViewRevisorController(Model model, Revisor view){
+    public void InitUserViewRevisorController(Model model, RevisorView view){
         this.model = model;
         this.view = view;
         model.attachObserver(this);

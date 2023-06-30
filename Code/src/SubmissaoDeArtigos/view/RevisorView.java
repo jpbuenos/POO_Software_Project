@@ -1,22 +1,43 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package SubmissaoDeArtigos.view;
+import java.awt.*;
+import SubmissaoDeArtigos.model.*;
+import SubmissaoDeArtigos.controller.*;
+import javax.swing.JFrame;
 
-/**
- *
- * @author levia
- */
-public class RevisorView extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Revisor
-     */
+public class RevisorView extends javax.swing.JFrame implements Observer {
+    
+    private Model model;
+    private RevisorController controller;
+    //Outros atributos..
+    
     public RevisorView() {
         initComponents();
+        this.addWindowListener(new ProgramaFechador());
     }
-
+    
+    
+    public void update(){
+    }
+    
+    public void initRevisorView(Model model){//Inicializa a view Revisor
+        this.model = model;
+        controller = new RevisorController();
+        controller.InitUserViewRevisorController(model, this);
+        model.attachObserver(this);
+        tela();
+    }
+    
+    
+    public void tela() {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new RevisorView().setVisible(true);
+            }
+        });
+    }
+    
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -95,13 +116,14 @@ public class RevisorView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        //implemetar ação no botão
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        //implementar ação no botão
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    
     /**
      * @param args the command line arguments
      */
@@ -119,24 +141,22 @@ public class RevisorView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(RevisorView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaCadastro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(RevisorView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaCadastro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(RevisorView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaCadastro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(RevisorView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaCadastro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new RevisorView().setVisible(true);
-            }
-        });
+        
     }
+   
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
