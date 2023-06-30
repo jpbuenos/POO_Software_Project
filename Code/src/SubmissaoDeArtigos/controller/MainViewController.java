@@ -22,6 +22,12 @@ public class MainViewController implements Observer{
             RevisorView view3 = new RevisorView();// ir para a tela revisor
             view3.initRevisorView(model);
         }
+        
+        public void initAvaliacao(){
+            AvaliacaoView view4 = new AvaliacaoView();
+            view4.initAvaliacaoView(model);
+            
+        }
 
 	public void update() {
 		
