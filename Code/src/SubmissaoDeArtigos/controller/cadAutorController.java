@@ -6,6 +6,7 @@ package SubmissaoDeArtigos.controller;
 
 import SubmissaoDeArtigos.view.cadAutorView;
 import SubmissaoDeArtigos.model.*;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -15,11 +16,13 @@ public class cadAutorController {
     
     public boolean cadastroAutor(String Nome, String Vinculacao, String Email, String Senha, String confirmarSenha ){
         if(Nome != null && Nome.length()>0 && Vinculacao != null && Vinculacao.length()>0 && Email != null && Email.length()>0 && Senha != null && Senha.length()>0 && confirmarSenha != null && confirmarSenha.length()>0){
-            Autor autor = new Autor();
-            autor.cadastrarAutor(autor);
-            return true;
+            if(Senha == confirmarSenha){
+                Autor autor = new Autor(Nome, Vinculacao, Email, Senha);
+                autor.cadastrarAutor(autor);
+                return true;
+            }
+        return false;
         }
         return false;
     }
-    
 }

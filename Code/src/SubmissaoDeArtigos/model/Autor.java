@@ -17,8 +17,7 @@ public class Autor extends Pessoa {
     }
 
     public void cadastrarAutor(Autor autor){
-        this.vinculacao = autor.vinculacao;
-        this.setNome(autor.getNome());
+        
     }
 
     public void editarArtigo() {

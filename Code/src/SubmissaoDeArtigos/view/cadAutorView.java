@@ -168,7 +168,8 @@ public class cadAutorView extends javax.swing.JFrame {
             cadAutorController cadautorcontroller = new cadAutorController();
             boolean situacao = cadautorcontroller.cadastroAutor(nome, vinculacao, email, Senha, confirmarSenha);
             if (situacao == true){JOptionPane.showMessageDialog(null, "cadastro realizado com sucesso");}
-        }catch(Exception e){
+        }
+        catch(Exception e){
             JOptionPane.showMessageDialog(null, "erro");
         }
     }//GEN-LAST:event_cadastrarButtonActionPerformed
