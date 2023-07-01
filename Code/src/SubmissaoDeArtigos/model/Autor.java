@@ -2,28 +2,37 @@
 package SubmissaoDeArtigos.model;
 import java.util.*;
 
-public class Autor {
+public class Autor extends Pessoa {
     private ArrayList<Artigo> artigos;
     private String vinculacao;
     private ArrayList<Artigo> historicoDePublicacoes;
 
-    public Autor() {
+    public Autor(String nome,String vinculacao, String email, String senha) {
+        this.setNome(nome);
+        this.setEnderecoEmail(email);
+        this.setSenha(senha);
+        this.vinculacao = vinculacao;
         artigos = new ArrayList<>();
         historicoDePublicacoes = new ArrayList<>();
     }
 
+    public void cadastrarAutor(Autor autor){
+        this.vinculacao = autor.vinculacao;
+        this.setNome(autor.getNome());
+    }
+
     public void editarArtigo() {
-        // Lógica para editar o artigo
+        // Lï¿½gica para editar o artigo
         System.out.println("Artigo editado com sucesso!");
     }
 
     public void enviarCorrecao() {
-        // Lógica para enviar correção do artigo
-        System.out.println("Correção enviada com sucesso!");
+        // Lï¿½gica para enviar correï¿½ï¿½o do artigo
+        System.out.println("Correï¿½ï¿½o enviada com sucesso!");
     }
 
     public void submeteArtigo() {
-        // Lógica para submeter o artigo
+        // Lï¿½gica para submeter o artigo
         System.out.println("Artigo submetido com sucesso!");
     }
 
