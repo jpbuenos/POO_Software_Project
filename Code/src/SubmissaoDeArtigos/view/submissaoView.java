@@ -27,7 +27,7 @@ public class submissaoView extends javax.swing.JFrame {
     private void initComponents() {
 
         textinst = new javax.swing.JLabel();
-        selectInstitução = new javax.swing.JComboBox<>();
+        selectInstitucao = new javax.swing.JComboBox<>();
         textinst1 = new javax.swing.JLabel();
         selectTrilha = new javax.swing.JComboBox<>();
         submeterButton = new javax.swing.JButton();
@@ -40,7 +40,7 @@ public class submissaoView extends javax.swing.JFrame {
         textinst.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textinst.setText("Instituição:");
 
-        selectInstitução.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        selectInstitucao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         textinst1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textinst1.setText("Trilha:");
@@ -63,7 +63,7 @@ public class submissaoView extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(textinst, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(selectInstitução, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(selectInstitucao, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(textinst1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -85,7 +85,7 @@ public class submissaoView extends javax.swing.JFrame {
                 .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(textinst)
-                    .addComponent(selectInstitução, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(selectInstitucao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(textinst1)
@@ -139,7 +139,7 @@ public class submissaoView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> selectInstitução;
+    private javax.swing.JComboBox<String> selectInstitucao;
     private javax.swing.JComboBox<String> selectTrilha;
     private javax.swing.JButton submeterButton;
     private javax.swing.JButton submeterButton1;

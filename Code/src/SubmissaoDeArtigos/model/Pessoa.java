@@ -1,29 +1,26 @@
 
 package SubmissaoDeArtigos.model;
 
-import  java.sql.Date;
 
 public class Pessoa {
-    private int id;
+    private String senha;
     private String nome;
-    private Date dataDeNasc;
     private String enderecoEmail;
     
     public Pessoa(){}
     
-    public Pessoa(int id, String nome, Date dataDeNasc, String enderecoEmail) {
-        this.id = id;
+    public Pessoa(String senha, String nome, String enderecoEmail) {
+        this.senha = senha;
         this.nome = nome;
-        this.dataDeNasc = dataDeNasc;
         this.enderecoEmail = enderecoEmail;
     }
 
-    public int getId() {
-        return id;
+    public String getSenha() {
+        return senha;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setSenha(String id) {
+        this.senha = id;
     }
 
     public String getNome() {
@@ -32,14 +29,6 @@ public class Pessoa {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public Date getDataDeNasc() {
-        return dataDeNasc;
-    }
-
-    public void setDataDeNasc(String date) {
-        this.dataDeNasc = Date.valueOf(date);
     }
 
     public String getEnderecoEmail() {
