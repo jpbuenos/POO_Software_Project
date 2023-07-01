@@ -37,12 +37,14 @@ public class TelaCadastro extends javax.swing.JFrame implements Observer{
     }
         
      //Mostra a tela   
-    public void tela(){//Mostra a tela
+    public void tela() {
     java.awt.EventQueue.invokeLater(new Runnable() {
         public void run() {
-            new TelaCadastro().setVisible(true);
+            setVisible(true);
         }
-    });}
+    });
+}
+
         
     private void mandarDados(){
         System.out.println(this.controller.x);
@@ -245,10 +247,11 @@ public class TelaCadastro extends javax.swing.JFrame implements Observer{
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        jTextSenha.getText();
+        
         Object itemSelecionado = jComboBoxTipo.getSelectedItem();
         String itemSelecionadoString = itemSelecionado.toString();
-        System.out.println(this.model.x);
+            
+        controller.login(jTextEmail.getText(),jTextSenha.getText() , itemSelecionadoString);
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
