@@ -19,11 +19,11 @@ public class DataInserter {
 
     public void insertPessoa(Pessoa pessoa) {
 
-        String sql = "INSERT INTO Pessoa (nome, dataDeNasc, enderecoEmail) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO Pessoa (nome, enderecoEmail, senha ) VALUES (?, ?, ?)";
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, pessoa.getNome());
-            stmt.setDate(2, pessoa.getDataDeNasc());
-            stmt.setString(3, pessoa.getEnderecoEmail());
+            stmt.setString(2, pessoa.getEnderecoEmail());
+            stmt.setString(3, pessoa.getSenha());
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

@@ -14,7 +14,16 @@ public class TelaCadastroController implements Observer {
                 model.attachObserver(this);
 	}
     
-    public void login(String nome,String Senha,String tipo){}
+    public String login(String nome,String senha,String tipo){
+        
+        if(nome == null && senha == null && tipo == null){
+        return "Digite valores validos";
+        }else{
+        
+        }
+        
+        return "";
+    }
     
    
   

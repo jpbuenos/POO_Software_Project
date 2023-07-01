@@ -60,7 +60,7 @@ public class DAO {
         for (Pessoa pessoa : pessoas) { //Printa todas as pessoas
             System.out.println("ID: " + pessoa.getId());
             System.out.println("Nome: " + pessoa.getNome());
-            System.out.println("Data de Nascimento: " + pessoa.getDataDeNasc());
+            System.out.println("Senha: " + pessoa.getSenha());
             System.out.println("Endereço de Email: " + pessoa.getEnderecoEmail());
             System.out.println("--------------------");
         }
@@ -72,28 +72,28 @@ public class DAO {
     //RETURN
     //RETORNA UMA LISTA DE PESSOAS
     public List<Pessoa> obterTodasAsPessoas() {
-        List<Pessoa> pessoas = new ArrayList<>();
+    List<Pessoa> pessoas = new ArrayList<>();
 
-        try (Connection conn = DriverManager.getConnection("jdbc:derby:banco");
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery("SELECT * FROM Pessoa")) {
+    try (Connection conn = DriverManager.getConnection("jdbc:derby:banco");
+         Statement stmt = conn.createStatement();
+         ResultSet rs = stmt.executeQuery("SELECT * FROM Pessoa")) {
 
-            while (rs.next()) {
-                int id = rs.getInt("id");
-                String nome = rs.getString("nome");
-                java.sql.Date dataDeNasc = rs.getDate("dataDeNasc");
-                String enderecoEmail = rs.getString("enderecoEmail");
+        while (rs.next()) {
+            int id = rs.getInt("id");
+            String nome = rs.getString("nome");
+            String senha = rs.getString("senha");
+            String enderecoEmail = rs.getString("enderecoEmail");
 
-                Pessoa pessoa = new Pessoa(id, nome, dataDeNasc, enderecoEmail);
-                pessoas.add(pessoa);
-            }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
+            Pessoa pessoa = new Pessoa(id,nome, enderecoEmail, senha);
+            pessoas.add(pessoa);
         }
 
-        return pessoas;
+    } catch (SQLException e) {
+        e.printStackTrace();
     }
+
+    return pessoas;
+}
     
     
 // Só essa classe vai ser executada,     

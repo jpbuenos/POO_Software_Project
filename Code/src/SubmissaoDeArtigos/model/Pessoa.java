@@ -3,26 +3,19 @@ package SubmissaoDeArtigos.model;
 
 
 public class Pessoa {
-    private String senha;
+    private int id;
     private String nome;
     private String enderecoEmail;
+    private String senha;
     
-    public Pessoa(){}
-    
-    public Pessoa(String senha, String nome, String enderecoEmail) {
-        this.senha = senha;
+
+    public Pessoa(int id, String nome, String enderecoEmail, String senha) {
         this.nome = nome;
         this.enderecoEmail = enderecoEmail;
+        this.senha = senha;
     }
 
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String id) {
-        this.senha = id;
-    }
-
+    // Getters e Setters
     public String getNome() {
         return nome;
     }
@@ -39,5 +32,21 @@ public class Pessoa {
         this.enderecoEmail = enderecoEmail;
     }
 
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     
 }
+    

@@ -19,7 +19,7 @@ public class DatabaseInitializer {
             stmt.execute("CREATE TABLE Pessoa (" +
                     "id INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1)," +
                     "nome VARCHAR(255) NOT NULL," +
-                    "dataDeNasc DATE," +
+                    "senha INT," +
                     "enderecoEmail VARCHAR(255)," +
                     "PRIMARY KEY (id))");
 
