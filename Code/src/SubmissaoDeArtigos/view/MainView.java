@@ -27,14 +27,10 @@ public class MainView extends javax.swing.JFrame implements Observer{
     public void initMainView(Model model) {
 		this.model = model;	// Guarda o modelo
 		controller = new MainViewController();	// Cria seu controller
+                controller.setModel(model);
 		controller.initMainViewController(model, this);	// Inicializa o controller
 		model.attachObserver(this);	// Registra a view na lista de observadores do modelo
 		
-                //
-                		this.model = model;	// Guarda o modelo
-		controller = new MainViewController();	// Cria seu controller
-		controller.initMainViewController(model, this);	// Inicializa o controller
-		model.attachObserver(this);	// Registra a view na lista de observadores do modelo	// Chama o menu principal
                 //
                 
                 controller.initTelaCadastro();
@@ -45,7 +41,6 @@ public class MainView extends javax.swing.JFrame implements Observer{
                 new MainView().setVisible(true);
                 }});
                 */
-
 	}
 
 

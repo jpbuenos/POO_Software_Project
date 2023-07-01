@@ -11,6 +11,7 @@ public class MainViewController implements Observer{
 	public void initMainViewController(Model model, MainView view) {
 		this.model = model;  // Guarda o modelo
 		this.view = view;	 // Guarda a view
+                model.attachObserver(this);
 	}
 	
         public void initTelaCadastro(){
@@ -32,6 +33,14 @@ public class MainViewController implements Observer{
 	public void update() {
 		
 	}
+
+    public Model getModel() {
+        return model;
+    }
+
+    public void setModel(Model model) {
+        this.model = model;
+    }
 
 
 	
