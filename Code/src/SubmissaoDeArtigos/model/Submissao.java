@@ -8,12 +8,11 @@ public class Submissao {
     private Revisor[] revisor;
     private String status;
 
-    public Submissao(Artigo artigo, Autor[] autor, Revista instituicao, Revisor[] revisor, String status) {
+    public Submissao(Artigo artigo, Autor[] autor, Revista instituicao, Revisor[] revisor) {
         this.artigo = artigo;
         this.autor = autor;
         this.instituicao = instituicao;
         this.revisor = revisor;
-        this.status = status;
     }
 
     public Artigo getArtigo() {

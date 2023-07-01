@@ -33,7 +33,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="textinst" min="-2" pref="70" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="selectInstitução" min="-2" pref="477" max="-2" attributes="0"/>
+                      <Component id="selectInstitucao" min="-2" pref="477" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="textinst1" min="-2" pref="70" max="-2" attributes="0"/>
@@ -63,7 +63,7 @@
               <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="textinst" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="selectInstitução" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="selectInstitucao" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -93,7 +93,7 @@
         <Property name="text" type="java.lang.String" value="Institui&#xe7;&#xe3;o:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="selectInstitu&#xe7;&#xe3;o">
+    <Component class="javax.swing.JComboBox" name="selectInstitucao">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
